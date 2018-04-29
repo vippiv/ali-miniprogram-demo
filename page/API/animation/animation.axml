@@ -16,9 +16,21 @@
       <view type="primary" onTap="rotateThenScale">旋转后缩放</view>
     </view>
     <view class="page-section-btns">
+      <view type="primary" onTap="opacity">透明</view>
+      <view type="primary" onTap="backgroundColor">背景色</view>
+      <view type="primary" onTap="width">改宽度</view>
+    </view>
+    <view class="page-section-btns">
+      <view type="primary" onTap="height">改高度</view>
+      <view type="primary" onTap="top">top定位</view>
+      <view type="primary" onTap="left">left定位</view>
+    </view>
+    <view class="page-section-btns">
       <view type="primary" onTap="all">同时展示全部</view>
       <view type="primary" onTap="allInQueue">顺序展示全部</view>
       <view type="primary" onTap="reset">还原</view>
     </view>
   </view>
 </view>
+<!-- PS： -->
+<!-- 调用动画操作方法后需要要调用 step() 来表示一组动画完成 -->

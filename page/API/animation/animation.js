@@ -51,5 +51,29 @@ Page({
       .skew(0, 0)
       .step({ duration: 0 })
     this.setData({ animation: this.animation.export() })
+  },
+  opacity(){
+    this.animation.opacity(0).step();
+    this.setData({ animation : this.animation.export() });
+  },
+  backgroundColor(){
+    this.animation.backgroundColor("red").step();
+    this.setData({ animation : this.animation.export() });
+  },
+  width(){
+    this.animation.width("400rpx").step();
+    this.setData({ animation : this.animation.export() });
+  },
+  height(){
+    this.animation.height("400rpx").step();
+    this.setData({ animation : this.animation.export() });
+  },
+  top(){
+    this.animation.top("10rpx").step();
+    this.setData({ animation : this.animation.export() });
+  },
+  left(){
+    this.animation.left("10rpx").step();
+    this.setData({ animation : this.animation.export() });
   }
 })
